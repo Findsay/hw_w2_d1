@@ -26,17 +26,18 @@ def test_set_student_cohort()
   assert_equal(4, student1.cohort())
 end
 
-def test_student_can_talk()
+def test_get_student_to_talk()
   student1 = Student.new("Fiona", 3)
-  student1.speak()
-  assert_equal("I can talk!", student1.speak())
+  result = student1.set_speech("I can talk")
+  assert_equal("I can talk", result)
 end
 
-def test_student_fave_language()
+def test_say_students_fave_language()
   student1 = Student.new("Fiona", 3)
-  student1.say_fave_language("Ruby")
-  assert_equal("I love Ruby", student1.say_fave_language("Ruby"))
+  result = student1.say_fave_language("Ruby")
+  assert_equal("I love Ruby", result)
 end
+
 
 
 end

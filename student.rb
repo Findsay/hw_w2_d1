@@ -20,13 +20,14 @@ class Student
     @cohort = new_student_cohort
   end
 
-  def speak()
-    return "I can talk!"
+  def set_speech(student_says)
+    return student_says
   end
 
-  def say_fave_language(fave_language)
-    return "I love #{fave_language}"
+  def say_fave_language(language)
+    return "I love #{language}"
   end
+
 
 
 
